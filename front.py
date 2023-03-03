@@ -11,7 +11,7 @@ class Post(BaseModel):
     published:bool = True
 
 try:
-    conn = psycopg2.connect(host= 'localhost', database = 'fAPI', user = 'postgres', password = 'Shikarpur', cursor_factory= RealDictCursor)
+    conn = psycopg2.connect(host= 'http://43.204.112.112:8000', database = 'fAPI', user = 'postgres', password = 'Shikarpur', cursor_factory= RealDictCursor)
     cursor = conn.cursor()
     print("Database connection was successfull")
 except Exception as error:
